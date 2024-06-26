@@ -1,0 +1,18 @@
+[2024-06-26T02:02:54.610+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-26T02:02:54.635+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: CelesteLongo_EntregaFinal.send_email scheduled__2024-06-24T09:00:00+00:00 [queued]>
+[2024-06-26T02:02:54.647+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: CelesteLongo_EntregaFinal.send_email scheduled__2024-06-24T09:00:00+00:00 [queued]>
+[2024-06-26T02:02:54.649+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-26T02:02:54.665+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): send_email> on 2024-06-24 09:00:00+00:00
+[2024-06-26T02:02:54.671+0000] {standard_task_runner.py:63} INFO - Started process 342 to run task
+[2024-06-26T02:02:54.677+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'CelesteLongo_EntregaFinal', 'send_email', 'scheduled__2024-06-24T09:00:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpnudlbhz1']
+[2024-06-26T02:02:54.681+0000] {standard_task_runner.py:91} INFO - Job 30: Subtask send_email
+[2024-06-26T02:02:54.750+0000] {task_command.py:426} INFO - Running <TaskInstance: CelesteLongo_EntregaFinal.send_email scheduled__2024-06-24T09:00:00+00:00 [running]> on host 262b850b6532
+[2024-06-26T02:02:54.912+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='CelesteLongo' AIRFLOW_CTX_DAG_ID='CelesteLongo_EntregaFinal' AIRFLOW_CTX_TASK_ID='send_email' AIRFLOW_CTX_EXECUTION_DATE='2024-06-24T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-24T09:00:00+00:00'
+[2024-06-26T02:02:54.913+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-26T02:02:57.049+0000] {logging_mixin.py:188} INFO - Email sent successfully
+[2024-06-26T02:02:57.220+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-26T02:02:57.223+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-26T02:02:57.247+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=CelesteLongo_EntregaFinal, task_id=send_email, run_id=scheduled__2024-06-24T09:00:00+00:00, execution_date=20240624T090000, start_date=20240626T020254, end_date=20240626T020257
+[2024-06-26T02:02:57.312+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-26T02:02:57.339+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-26T02:02:57.343+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
